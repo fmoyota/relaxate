@@ -47,7 +47,7 @@
 	
   <!-- all platforms -->
   <preference name="phonegap-version" value="cli-8.0.0" />
-  <preference name="orientation" value="landscape" />
+  <!--<preference name="orientation" value="landscape" />-->
   <preference name="fullscreen" value="true" />
 
   <!-- iOS only -->
