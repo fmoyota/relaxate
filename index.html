@@ -41,7 +41,7 @@ width=device-width, height=device-height, target-densitydpi=device-dpi" />
 	<div class="vertical">
         <img src="images/screen-rotation-button.png" alt="Relaxate">
         <p>&nbsp;</p>
-        <p>Gire su pantall en sentido horizontal.</p>
+        <p>Gire su pantalla en sentido horizontal.</p>
     </div>
 	
 <script src="js/jquery.js" type="text/javascript"></script>
@@ -100,7 +100,23 @@ width=device-width, height=device-height, target-densitydpi=device-dpi" />
             $('.owl-carousel').trigger('to.owl.carousel', 6)
           });
         
+        /*cambio de pantalla*/
+        window.onresize = function(event) {
+            checkOrientation();
+        };
+        
 	});
+        
+        function checkOrientation(){
+        if(window.innerHeight > window.innerWidth){
+               $('#contenido').hide();
+                $('.vertical').show();
+            }else{
+                $('#contenido').show();
+                $('.vertical').hide();
+            }
+        }
+        checkOrientation();
         
 	</script>
     
