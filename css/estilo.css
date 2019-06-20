@@ -92,7 +92,7 @@ body{
     margin: auto;
     display: block;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 980px) {
     #contenido{
         display: none;
     }
