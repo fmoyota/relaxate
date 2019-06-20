@@ -22,7 +22,10 @@ width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <div id="contenido" class="owl-carousel">
         <div class="item"><img src="images/Relaxate1.jpg" alt="Relaxate"></div>
         <div class="item"><img src="images/Relaxate2.jpg" alt="Relaxate"></div>
-        <div class="item"><img src="images/Relaxate3.jpg" alt="Relaxate"></div>
+        <div class="item"><img src="images/Relaxate3a.jpg" alt="Relaxate">
+        <img src="images/Relaxate3b.png" alt="Relaxate" id="botonb">
+            <img src="images/Relaxate3c.png" alt="Relaxate" id="botonc">
+        </div>
         <div class="item"><img src="images/Relaxate4.jpg" alt="Relaxate">
             <div id="ginecologia" class="boton-vertical"></div>
             <div id="general" class="boton-vertical"></div>
@@ -90,6 +93,12 @@ width=device-width, height=device-height, target-densitydpi=device-dpi" />
         $('.home').click(function(){
     $('.owl-carousel').trigger('to.owl.carousel', 0)
   });
+        $('#botonb').click(function(){
+            $('.owl-carousel').trigger('to.owl.carousel', 8)
+          });
+        $('#bootonc').click(function(){
+            $('.owl-carousel').trigger('to.owl.carousel', 9)
+          });
         $('#ginecologia').click(function(){
             $('.owl-carousel').trigger('to.owl.carousel', 4)
           });
