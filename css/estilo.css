@@ -17,6 +17,13 @@ body{
 	left: 0;
 	right: 0;
 }
+.menu{
+    position:absolute;
+    top:4%;
+    right: 10px;
+    width: auto;
+    display: block;
+}
 #botonb{
     position: absolute;
     width: auto;
@@ -31,9 +38,8 @@ body{
     top:50%;
     left: 0;}
 .home{
-    position: fixed;
-    top:4%;
-    right: 10px;
+    float: left;
+    margin-left: 4px;
     width:48px;
     height: 48px;
     z-index: 9;
